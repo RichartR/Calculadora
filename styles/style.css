@@ -1,0 +1,147 @@
+*{ /* { Reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo calculadora */
+
+.calculadora {
+    margin: 20px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #303030;
+    width: 30%;
+    height: 50vh;
+    max-width: 400px;
+    max-height: 950px;
+    min-height: 400px;
+}
+
+/* Fuente */
+@font-face {
+    font-family: 'Digital';
+    src: url('../fonts/DS-DIGI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Botones */
+
+.boton{
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 5px;
+    min-height: 20px;
+    background-color: #8f8f8f;
+    font-size: 2vw;
+}
+
+.boton:hover{
+    background-color: #d1d1d1;
+}
+
+.boton:active{
+    background-color: #8f8f8f;
+    transform: scale(0.95);
+}
+
+#botonSuma, #botonResta, #botonMultiplicacion, #botonDivision {
+    background-color: rgb(202, 156, 4);
+}
+
+#botonSuma:hover, #botonResta:hover, #botonMultiplicacion:hover, #botonDivision:hover {
+    background-color: rgb(255, 196, 0);
+}
+
+#botonIgual {
+    background-color: rgb(68, 172, 115);
+}
+
+#botonIgual:hover {
+    background-color: rgb(4, 211, 97);
+}
+
+/* Grid calculadora */
+    
+#pantalla {
+    grid-column: span 4 / span 4;
+    border: 1px solid #000;
+    height: 100%;
+    min-height: 30px;
+    background-color: #e7e7e7;
+    text-align: right;
+    padding: 10px;
+    font-family: 'Digital', 'sans-serif';
+    font-size: 3vw;
+}
+
+#boton7 {
+    grid-row-start: 2;
+}
+
+#boton8 {
+    grid-row-start: 2;
+}
+
+#boton9 {
+    grid-row-start: 2;
+}
+
+#botonSuma {
+    grid-row-start: 2;
+}
+
+#boton4 {
+    grid-row-start: 3;
+}
+
+#boton5 {
+    grid-row-start: 3;
+}
+
+#boton6 {
+    grid-row-start: 3;
+}
+
+#botonMultiplicacion {
+    grid-row-start: 3;
+}
+
+#boton1 {
+    grid-row-start: 4;
+}
+
+#boton2 {
+    grid-row-start: 4;
+}
+
+#boton3 {
+    grid-row-start: 4;
+}
+
+#botonResta {
+    grid-row-start: 4;
+}
+
+#boton0 {
+    grid-row-start: 5;
+}
+
+#botonPunto {
+    grid-row-start: 5;
+}
+
+#botonIgual {
+    grid-row-start: 5;
+}
+
+#botonDivision {
+    grid-row-start: 5;
+}
+        
